@@ -1,0 +1,206 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aventis Virtual Conference</title>
+  <link rel="stylesheet" href="{% static 'events/style.css' %}" />
+  <meta name="viewport" content="width=1200">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="main-nav">
+    <div class="nav-logo"><img src="logoipsum.png" alt="Logo" /></div>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#pages">Pages</a></li>
+  <li><a href="#aboutus">About us</a></li>
+  <li><a href="#organisers">Organisers</a></li>
+  <li><a href="#speakers">Speakers</a></li>
+</ul>
+<button class="nav-cta"><a href="#contact">Contact Us</a></button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+  <div class="hero-glow"></div>
+  <img class="hero-img hero-img1" src="{% static 'events/images/hero1.jpg' %}" />
+  <img class="hero-img hero-img2" src="{% static 'events/images/hero2.jpg' %}" />
+  <img class="hero-img hero-img3" src="{% static 'events/images/hero3.jpg' %}" />
+  <img class="hero-img hero-img4" src="{% static 'events/images/hero4.jpg' %}" />
+  <img class="hero-img hero-img5" src="{% static 'events/images/hero5.jpg' %}" />
+
+  <div class="hero-content">
+    <h1>Join The Online<br /><span class="hero-script">Revolution</span></h1>
+    <button class="hero-btn">Buy a Ticket Now</button>
+  </div>
+</section>
+  <!-- INFO CARDS -->
+  <section id="pages" class="info-section">...</section>
+    <h2>Don’t Miss The 2024 Virtual Conference Experience</h2>
+    <div class="info-cards">
+      <div class="info-card">
+        <div>Insights from Design Thinking & Innovation Week 2024</div>
+        <a href="#">More Details</a>
+      </div>
+      <div class="info-card focus">
+        <div>Collaborative Support for Clear Explanations to Make It Clear</div>
+        <a href="#">More Details</a>
+      </div>
+      <div class="info-card">
+        <div>Your Ticket Purchase Supports Us and Guarantees a Good Time</div>
+        <a href="#">More Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT PLAN (JUNE 09) -->
+  <section id="aboutus" class="event-plan-section">...</section>
+    <h2>June 09</h2>
+    <div class="event-card-row">
+      <div class="event-card">
+        <img src="confetti.jpg" />
+        <div>
+          Connect With Peers, Industry Leaders, And Potential Collaborators.
+          <a href="#">More Details</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="balloons.jpg" />
+        <div>
+          Participate In Hands-On Sessions Designed To Enhance Your Skills
+          <a href="#">More Details</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="fireworks.jpg" />
+        <div>
+          Hear From Renowned Experts As They Share Their Knowledge
+          <a href="#">More Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="event-org-row">
+      <div class="org-logos">
+        <img src="logo-orange.png" />
+        <img src="logoipsum1.png" />
+        <img src="logoipsum2.png" />
+        <img src="logoipsum3.png" />
+        <img src="logoipsum4.png" />
+      </div>
+      <div class="event-duration">
+        <span>Duration<br><strong>120 MIN</strong></span>
+      </div>
+    </div>
+    <div class="speakers-row">
+      <h3>Speakers</h3>
+      <div class="speakers-list">
+        <div class="speaker">
+          <img src="speaker1.jpg" />
+          <div>Ronald Richards<br /><span>AlphaEdge</span></div>
+        </div>
+        <div class="speaker">
+          <img src="speaker2.jpg" />
+          <div>Floyd Miles<br /><span>CortexIndustries</span></div>
+        </div>
+        <div class="speaker">
+          <img src="speaker3.jpg" />
+          <div>Esther Howard<br /><span>QuantumWave</span></div>
+        </div>
+        <div class="speaker">
+          <img src="speaker4.jpg" />
+          <div>Darlene Robertson<br /><span>EdgeVertex</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANISERS GRID -->
+  <section id="organisers" class="organisers-section">...</section>
+    <h2>Organisers</h2>
+    <div class="organisers-glow"></div>
+    <div class="organisers-grid">
+      <div class="org-cell main"><img src="logo-orange.png" /></div>
+      <div class="org-cell"><img src="logoipsum1.png" /></div>
+      <div class="org-cell"><img src="logoipsum2.png" /></div>
+      <div class="org-cell tall"><img src="logoipsum3.png" /></div>
+      <div class="org-cell"><img src="logoipsum4.png" /></div>
+      <div class="org-cell wide"><img src="logoipsum5.png" /></div>
+      <div class="org-cell sponsors">Our Sponsors</div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="speakers" class="speakers-row">...</section>
+    <div class="faq-left">
+      <h2>Frequently Asked<br />Question</h2>
+      <img src="faq-speaker.jpg" />
+    </div>
+    <div class="faq-right">
+      <div class="faq-accordion">
+        <div class="faq-item open">
+          <div class="faq-q">What Services Do Digital Event Offer? <span class="icon">−</span></div>
+          <div class="faq-a">Digital events offer live streaming, interactive sessions, virtual networking, on-demand content, and real-time audience engagement tools.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What Services Do Digital Event Offer? <span class="icon">+</span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How Do I Choose The Digital Conference? <span class="icon">+</span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How Much Does It Cost To Here? <span class="icon">+</span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What Services Do Digital Event Offer? <span class="icon">+</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">...</section>
+    <div class="contact-left">
+      <h2>Love To Hear<br />From You Get In<br />Touch!</h2>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Phone" />
+        </div>
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Sent a Message</button>
+      </form>
+    </div>
+    <div class="contact-right">
+      <iframe src="https://maps.google.com/maps?q=Amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Blog</a>
+      <a href="#">Not Found</a>
+      <a href="#">Contact us</a>
+    </div>
+    <div class="footer-nav">
+      <a class="active">Home</a>
+      <a>Home 2</a>
+      <a>About us</a>
+      <a>Organisers</a>
+      <a>Event Plan</a>
+      <a>Pricing</a>
+      <a>Testimonials</a>
+    </div>
+    <div class="footer-social">
+      <a><img src="social-fb.png" /></a>
+      <a><img src="social-li.png" /></a>
+      <a><img src="social-gh.png" /></a>
+    </div>
+    <div class="footer-copy">
+      © 2025 Powered by Framer With <span style="color:#00f">❤</span>
+    </div>
+  </footer>
+</body>
+</html>
