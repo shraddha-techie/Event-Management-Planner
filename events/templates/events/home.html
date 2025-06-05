@@ -10,7 +10,7 @@
 <body>
   <!-- NAVBAR -->
   <nav class="main-nav">
-    <div class="nav-logo"><img src="logoipsum.png" alt="Logo" /></div>
+    <div class="nav-logo"><img src="../../static/events/images/main.jpeg" alt="AVENTIS logo" style="height: 70px;"/></div>
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#pages">Pages</a></li>
@@ -18,62 +18,70 @@
   <li><a href="#organisers">Organisers</a></li>
   <li><a href="#speakers">Speakers</a></li>
 </ul>
-<button class="nav-cta"><a href="#contact">Contact Us</a></button>
+<button class="nav-cta">
+  <a href="#contact" style="color:inherit;text-decoration:none;">Contact Us</a>
+  </button>
   </nav>
-
   <!-- HERO SECTION -->
-  <section id="home" class="hero-section">
   <div class="hero-glow"></div>
-  <img class="hero-img hero-img1" src="{% static 'events/images/hero1.jpg' %}" />
-  <img class="hero-img hero-img2" src="{% static 'events/images/hero2.jpg' %}" />
-  <img class="hero-img hero-img3" src="{% static 'events/images/hero3.jpg' %}" />
-  <img class="hero-img hero-img4" src="{% static 'events/images/hero4.jpg' %}" />
-  <img class="hero-img hero-img5" src="{% static 'events/images/hero5.jpg' %}" />
-
+<section id="home" class="hero-section">
+  <video class="hero-bg-video" autoplay loop muted playsinline>
+    <source src="{% static 'events/images/home.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <img class="hero-img hero-img1" src="{% static 'events/images/img1.png' %}">
+  <img class="hero-img hero-img2" src="{% static 'events/images/img2.png' %}">
+  <img class="hero-img hero-img3" src="{% static 'events/images/img3.png' %}">
+  <img class="hero-img hero-img4" src="{% static 'events/images/img4.png' %}">
+  <img class="hero-img hero-img5" src="{% static 'events/images/img5.png' %}">
   <div class="hero-content">
     <h1>Join The Online<br /><span class="hero-script">Revolution</span></h1>
     <button class="hero-btn">Buy a Ticket Now</button>
-  </div>
+    </div>
 </section>
-  <!-- INFO CARDS -->
-  <section id="pages" class="info-section">...</section>
-    <h2>Don’t Miss The 2024 Virtual Conference Experience</h2>
-    <div class="info-cards">
-      <div class="info-card">
-        <div>Insights from Design Thinking & Innovation Week 2024</div>
-        <a href="#">More Details</a>
-      </div>
-      <div class="info-card focus">
-        <div>Collaborative Support for Clear Explanations to Make It Clear</div>
-        <a href="#">More Details</a>
-      </div>
-      <div class="info-card">
-        <div>Your Ticket Purchase Supports Us and Guarantees a Good Time</div>
-        <a href="#">More Details</a>
+<section class="info-section">
+  <h2>Don't Miss The 2025 Virtual Conference Experience</h2>
+  <div class="info-cards">
+    <div class="info-card">
+      <div class="info-card-content">
+        <p>Insights from Design Thinking & Innovation Week 2025</p>
+        <a href="#" class="info-card-link">More Details</a>
       </div>
     </div>
-  </section>
-
+    <div class="info-card">
+      <div class="info-card-content">
+        <p>Collaborative Support for Clear Explanations to Make It Clear</p>
+        <a href="#" class="info-card-link">More Details</a>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-content">
+        <p>Your Ticket Purchase Supports Us and Guarantees a Good Time</p>
+        <a href="#" class="info-card-link">More Details</a>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- EVENT PLAN (JUNE 09) -->
   <section id="aboutus" class="event-plan-section">...</section>
     <h2>June 09</h2>
     <div class="event-card-row">
       <div class="event-card">
-        <img src="confetti.jpg" />
+        <img src="{% static 'events/images/confetti.png' %}" />
         <div>
           Connect With Peers, Industry Leaders, And Potential Collaborators.
           <a href="#">More Details</a>
         </div>
       </div>
       <div class="event-card">
-        <img src="balloons.jpg" />
+        <img src="{% static 'events/images/balloons.png' %}" />
         <div>
           Participate In Hands-On Sessions Designed To Enhance Your Skills
           <a href="#">More Details</a>
         </div>
       </div>
       <div class="event-card">
-        <img src="fireworks.jpg" />
+        <img src="{% static 'events/images/fireworks.png' %}" />
         <div>
           Hear From Renowned Experts As They Share Their Knowledge
           <a href="#">More Details</a>
@@ -81,12 +89,12 @@
       </div>
     </div>
     <div class="event-org-row">
-      <div class="org-logos">
-        <img src="logo-orange.png" />
-        <img src="logoipsum1.png" />
-        <img src="logoipsum2.png" />
-        <img src="logoipsum3.png" />
-        <img src="logoipsum4.png" />
+      <div class="load.png">
+      <img src="{% static 'events/images/logoipsum5.png' %}" />
+      <img src="{% static 'events/images/logoipsum7.png' %}" />
+      <img src="{% static 'events/images/logoipsum3.png' %}" />
+      <img src="{% static 'events/images/logoipsum1.png' %}" />
+      <img src="{% static 'events/images/logoipsum3.png' %}" />
       </div>
       <div class="event-duration">
         <span>Duration<br><strong>120 MIN</strong></span>
@@ -116,20 +124,20 @@
   </section>
 
   <!-- ORGANISERS GRID -->
-  <section id="organisers" class="organisers-section">...</section>
-    <h2>Organisers</h2>
-    <div class="organisers-glow"></div>
-    <div class="organisers-grid">
-      <div class="org-cell main"><img src="logo-orange.png" /></div>
-      <div class="org-cell"><img src="logoipsum1.png" /></div>
-      <div class="org-cell"><img src="logoipsum2.png" /></div>
-      <div class="org-cell tall"><img src="logoipsum3.png" /></div>
-      <div class="org-cell"><img src="logoipsum4.png" /></div>
-      <div class="org-cell wide"><img src="logoipsum5.png" /></div>
-      <div class="org-cell sponsors">Our Sponsors</div>
-    </div>
-  </section>
-
+  {% load static %}
+<section id="organisers" class="organisers-section">
+  <h2>Organisers</h2>
+  <div class="organisers-glow"></div>
+  <div class="organisers-grid">
+    <div class="org-cell main"><img src="{% static 'events/images/load.png' %}" /></div>
+    <div class="org-cell"><img src="{% static 'events/images/logoipsum1.png' %}" /></div>
+    <div class="org-cell"><img src="{% static 'events/images/logoipsum2.png' %}" /></div>
+    <div class="org-cell tall"><img src="{% static 'events/images/logoipsum3.png' %}" /></div>
+    <div class="org-cell"><img src="{% static 'events/images/logo.png' %}" /></div>
+    <div class="org-cell wide"><img src="{% static 'events/images/logoipsum5.png' %}" /></div>
+    <div class="org-cell sponsors">Our Sponsors</div>
+  </div>
+</section>
   <!-- FAQ SECTION -->
   <section id="speakers" class="speakers-row">...</section>
     <div class="faq-left">
