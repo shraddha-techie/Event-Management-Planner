@@ -39,6 +39,7 @@
     <button class="hero-btn">Buy a Ticket Now</button>
     </div>
 </section>
+
 <section class="info-section">
   <h2>Don't Miss The 2025 Virtual Conference Experience</h2>
   <div class="info-cards">
@@ -61,9 +62,88 @@
       </div>
     </div>
   </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Section Banner Example</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="section-banner.css">
+</head>
+<body>
+  <!-- Section 1 -->
+  <div class="section-banner">
+    <div class="section-banner__image">
+      <img src="/static/events/images/banner1.png" alt="Speaker giving a talk">
+    </div>
+    <div class="section-banner__content">
+      <div class="section-banner__title">
+        Confident You're On<br>The Right Track
+      </div>
+      <p class="section-banner__desc">
+        When you know you’re doing things right, there's a sense of confidence and clarity that guides your actions. Every step you take is backed by thoughtful planning and a clear understanding of your goals.
+      </p>
+    </div>
+  </div>
+  <!-- Section 2 -->
+  <div class="section-banner reverse">
+    <div class="section-banner__image">
+      <img src="/static/events/images/banner2.jpg" alt="Workshop stage">
+    </div>
+    <div class="section-banner__content">
+      <div class="section-banner__title">
+        Engage In Our<br>Learning Workshop
+      </div>
+      <p class="section-banner__desc">
+        A workshop is a dynamic and interactive learning experience designed to provide participants with practical skills, hands-on training and valuable insights into a specific topic or field.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section-banner">
+    <div class="section-banner__image">
+      <img src="/static/events/images/Banner3.jpg" alt="VIP registration meeting room">
+    </div>
+    <div class="section-banner__content">
+      <div class="section-banner__title">
+        Opening Celebration<br>&amp; VIP Registration
+      </div>
+      <p class="section-banner__desc">
+        Join us for an unforgettable Opening Party that kicks off our event in style! This exclusive celebration is your chance to mingle with fellow attendees, speakers, and industry leaders in a relaxed and vibrant atmosphere.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
 </section>
-  <!-- EVENT PLAN (JUNE 09) -->
-  <section id="aboutus" class="event-plan-section">...</section>
+<div class="gradient-box">
+  <!-- Yahan text ya stylish element daalo -->
+  <div class="box-text">
+    <marquee scrollamount="10" direction="left">
+    There's nothing better than live music, I think.
+    </marquee>
+  </div>
+</div>
+    </body>
+  </html>
+  <!-- ORGANISERS GRID -->
+  {% load static %}
+<section id="organisers" class="organisers-section">
+  <h2>Organisers</h2>
+  <div class="organisers-glow"></div>
+  <div class="organisers-grid">
+    <div class="org-cell main"><img src="{% static 'events/images/load.png' %}" /></div>
+    <div class="org-cell"><img src="{% static 'events/images/logoipsum1.png' %}" /></div>
+    <div class="org-cell"><img src="{% static 'events/images/logoipsum2.png' %}" /></div>
+    <div class="org-cell tall"><img src="{% static 'events/images/logoipsum3.png' %}" /></div>
+    <div class="org-cell"><img src="{% static 'events/images/logo.png' %}" /></div>
+    <div class="org-cell wide"><img src="{% static 'events/images/logoipsum5.png' %}" /></div>
+    <div class="org-cell sponsors">Our Sponsors</div>
+  </div>
+</section>
+<h1 class="event card tittle"></h1>
+<div class="organisers-subtext">Trategize Success With A Detailes Event Plan </div>
     <h2>June 09</h2>
     <div class="event-card-row">
       <div class="event-card">
@@ -90,11 +170,11 @@
     </div>
     <div class="event-org-row">
       <div class="load.png">
-      <img src="{% static 'events/images/logoipsum5.png' %}" />
-      <img src="{% static 'events/images/logoipsum7.png' %}" />
-      <img src="{% static 'events/images/logoipsum3.png' %}" />
-      <img src="{% static 'events/images/logoipsum1.png' %}" />
-      <img src="{% static 'events/images/logoipsum3.png' %}" />
+      <img src="{% static 'events/images/logoipsum5.' %}" />
+      <img src="{% static 'events/images/logoipsum7.' %}" />
+      <img src="{% static 'events/images/logoipsum3.' %}" />
+      <img src="{% static 'events/images/logoipsum1.' %}" />
+      <img src="{% static 'events/images/logoipsum3.' %}" />
       </div>
       <div class="event-duration">
         <span>Duration<br><strong>120 MIN</strong></span>
@@ -122,22 +202,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ORGANISERS GRID -->
-  {% load static %}
-<section id="organisers" class="organisers-section">
-  <h2>Organisers</h2>
-  <div class="organisers-glow"></div>
-  <div class="organisers-grid">
-    <div class="org-cell main"><img src="{% static 'events/images/load.png' %}" /></div>
-    <div class="org-cell"><img src="{% static 'events/images/logoipsum1.png' %}" /></div>
-    <div class="org-cell"><img src="{% static 'events/images/logoipsum2.png' %}" /></div>
-    <div class="org-cell tall"><img src="{% static 'events/images/logoipsum3.png' %}" /></div>
-    <div class="org-cell"><img src="{% static 'events/images/logo.png' %}" /></div>
-    <div class="org-cell wide"><img src="{% static 'events/images/logoipsum5.png' %}" /></div>
-    <div class="org-cell sponsors">Our Sponsors</div>
-  </div>
-</section>
   <!-- FAQ SECTION -->
   <section id="speakers" class="speakers-row">...</section>
     <div class="faq-left">
