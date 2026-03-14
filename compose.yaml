@@ -1,0 +1,6 @@
+services:
+  app:
+    image: eventapp
+    container_name: eventconn
+    ports:
+      - "8501-8501"
