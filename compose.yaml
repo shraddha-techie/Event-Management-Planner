@@ -1,6 +1,8 @@
+version: "3"
+
 services:
   app:
-    image: eventapp
-    container_name: eventconn
+    build: .
+    container_name: eventapp
     ports:
-      - "8501-8501"       #fjhkjdsf
+      - "8000:8000"
