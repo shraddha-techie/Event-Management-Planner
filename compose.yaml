@@ -5,4 +5,4 @@ services:
     build: .
     container_name: eventapp
     ports:
-      - "8000:8000"
+      - "8000:8000"                   #some changes 
