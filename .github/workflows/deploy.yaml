@@ -20,8 +20,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd event-planner
-
+          cd /home/ubuntu/Event-Management-Planner
           git pull origin main
 
           docker compose down
